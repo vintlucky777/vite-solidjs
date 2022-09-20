@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "allowJs": true,
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "strict": false,
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
+        // module resolve paths
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
+    }
+}
