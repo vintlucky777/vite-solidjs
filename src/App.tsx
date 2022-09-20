@@ -8,8 +8,8 @@ import { css } from 'twind/css'
 import { Spacer, Flex, Row, Col, Centered, Interspaced } from '@/components/Layout'
 
 const imgCls = apply`p-0 w-32 h-32`
-const imgClsVite = apply`hover:${css({ willChange: 'filter', filter: 'drop-shadow(0 0 2em #646cffaa)' })}`
-const imgClsSolidjs = apply`hover:${css({ willChange: 'filter', filter: 'drop-shadow(0 0 2em #487ae6aa)' })}`
+const imgClsVite = apply`transition-[filter] ${css({ willChange: 'filter' })} hover:${css({ filter: 'drop-shadow(0 0 2em #646cffaa)' })}`
+const imgClsSolidjs = apply`transition-[filter] ${css({ willChange: 'filter' })} hover:${css({ filter: 'drop-shadow(0 0 2em #487ae6aa)' })}`
 
 function App() {
   const [count, setCount] = createSignal(0)
